@@ -1,6 +1,6 @@
 apt-get update
 echo "Download windows files"
-wget -O w7x64.img https://drive.google.com/u/0/uc?id=1x2m-lfbY-5dHtgf62s-0nYiMfEJGBhtH&export=download&confirm=t&uuid=dca91952-5f83-4446-a931-649980c74fb2&at=ALgDtszFet5PSZ7jRhDBCIOvQUbj:1679206402734
+wget -O w7x64.img bit.ly/3LzM6mF
 echo "Download ngrok"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
