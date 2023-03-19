@@ -1,6 +1,6 @@
 apt-get update
 echo "Download windows files"
-wget -O w7x64.img /baunegaard/boxes/win10pro-en/versions/1.4.0/providers/vmware_desktop.box
+wget -O w7x64.img https://vagrantcloud-files-production.s3-accelerate.amazonaws.com/archivist/boxes/4deb9af6-c772-48e6-ab33-c0a137fd95a8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA6NDPRW4BST4TQIAM%2F20230319%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230319T065332Z&X-Amz-Expires=900&X-Amz-Security-Token=FwoGZXIvYXdzEKD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDF537Lpg7tlO9jvkqCK3ATdMOppSFNwDm1zjOOLDwM2n5m%2FE79dLo%2Bsc4JqUN4NVa%2FZeabLbae11ip16rCXXbkIDVfd6opd1UzZt%2By3Thyk%2B90rBxrel4SArOGXBs0KQIaCfd7T5RXR7AWFjVBOzoNCSM%2BnR6tkKlGp2HhwLalM9RvHFMWzSHy%2BZLk38NWFaq%2BQ2eR%2B4BzdGd7h28GsXfhXg3raax9Z6LDpyMgyZ4vZXzZ4LrPsMIZJlpXvBbT4t4eOTUoUv6yi539qgBjItDaTNcMDeLTfswM7bbI2Cq1wJSK3OacN1sdErIsZtmOZRQyc0EqRk5eN9z6PZ&X-Amz-SignedHeaders=host&X-Amz-Signature=d3c96ca5651b555c9a53da98d57b4d995a3a1518fede4cb23dca8a56f82ee269
 echo "Download ngrok"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
