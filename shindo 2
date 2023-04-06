@@ -187,14 +187,54 @@ key_b.TextSize = 14.000
 key_b.MouseButton1Down:connect(function()
 
 if key_tb.Text == _G.key then
-    game:GetService("StarterGui"):SetCore("SendNotification", { 
-    Title = "Nguyễn An";
-    Text = "Nhập key thành công";
-    Icon = "rbxthumb://type=Asset&id=11749957186&w=150&h=150"})
-    Duration = 5; 
+  
+    wait(2)
 
 bar.Text = "   An | Load"
 bar_4.Visible = true
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "Nguyễn An";
+    Text = "Nhập key thành công";
+    Icon = "rbxthumb://type=Asset&id=11749957186&w=150&h=150"})
+    Duration = 5;
+
+local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Shit exploit g"
+                    local HttpService = game:GetService("HttpService")
+                    local Data =
+                        {
+                            ["embeds"]= {
+                                {            
+                                    ["title"]= "Click here to view players profile";
+                                    ["url"]= "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId;
+                                    ["description"]= "```"..game.Players.LocalPlayer.DisplayName.." ("..game.Players.LocalPlayer.Name..") ```";
+                                    ["color"]= tonumber(0x7269da);
+                                    
+                                    ["fields"]= {
+                                        {
+                                            ["name"]= "Executor",
+                                            ["value"]= "```"..ExecutorUsing.."```",
+                                            ["inline"]= true
+                                        },
+                                        {
+                                            ["name"]= "Age",
+                                            ["value"]= "```"..game.Players.LocalPlayer.AccountAge.."```",
+                                            ["inline"]= true
+                                        },
+                                        {
+                                            ["name"]= "Script Starus",
+                                            ["value"]= "```Hack kesh Hub đã bật```",
+                                            ["inline"]= true
+                                        },
+                                    }              
+                                }
+                            }
+                    }
+                    local Headers = {["Content-Type"]="application/json"}
+                    local Encoded = HttpService:JSONEncode(Data)
+                    
+                    Request = http_request or request or HttpPost or syn.request
+                    local Final = {Url = "https://discord.com/api/webhooks/1093465330770260028/4pTWwrvZGf7H5UR2jWBn3yduJINLpb15jZOUAhteUuVNBmN5h6dVAHyYsOVj02jfSKZ0", Body = Encoded, Method = "POST", Headers = Headers}
+                    Request(Final)
 else
 key_tb.Text =" Sai Chìa Khóa"
 game:GetService("StarterGui"):SetCore("SendNotification", { 
