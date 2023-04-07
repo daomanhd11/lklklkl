@@ -3,6 +3,7 @@
 
 -- Instances:
 
+local ScreenGui = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
 local UICorner = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
@@ -11,7 +12,10 @@ local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
-ImageLabel.Parent = game.StarterGui.ScreenGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageLabel.Parent = ScreenGui
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Position = UDim2.new(0.143827856, 0, 0.0261044204, 0)
 ImageLabel.Size = UDim2.new(0.740656853, 0, 0.917670667, 0)
@@ -38,7 +42,7 @@ UIAspectRatioConstraint_2.AspectRatio = 1.431
 
 -- Scripts:
 
-local function MXZEX_fake_script() -- TextButton.LocalScript 
+local function THHVVKR_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Up:Connect(function()
@@ -46,8 +50,8 @@ local function MXZEX_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(MXZEX_fake_script)()
-local function LOOXJN_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(THHVVKR_fake_script)()
+local function UAAFSO_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local UIS = game:GetService('UserInputService')
@@ -85,4 +89,4 @@ local function LOOXJN_fake_script() -- ImageLabel.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LOOXJN_fake_script)()
+coroutine.wrap(UAAFSO_fake_script)()
